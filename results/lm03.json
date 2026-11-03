@@ -1,0 +1,177 @@
+{
+ "params": 101217938,
+ "epochs": 20,
+ "capped": false,
+ "minutes": 3.7,
+ "test_loss": 4.349712707767276,
+ "test_ppl": 77.45620716176612,
+ "test_acc": 0.510022367699949,
+ "bleu_greedy": 14.181249055711133,
+ "bleu_greedy_beam_subset": 14.589416031829913,
+ "bleu_beam": 15.415158498542068,
+ "beam_width": 4,
+ "beam_pairs": 500,
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 5.87086672782898,
+   "test_loss": 5.037498500179418,
+   "test_acc": 0.28484618030691283
+  },
+  {
+   "epoch": 2,
+   "train_loss": 4.6200217485427855,
+   "test_loss": 4.460714200782832,
+   "test_acc": 0.3471325514434475
+  },
+  {
+   "epoch": 3,
+   "train_loss": 3.945617711544037,
+   "test_loss": 4.068313427231415,
+   "test_acc": 0.3855340307262541
+  },
+  {
+   "epoch": 4,
+   "train_loss": 3.373007220029831,
+   "test_loss": 3.8316303035672337,
+   "test_acc": 0.41444064473841224
+  },
+  {
+   "epoch": 5,
+   "train_loss": 2.8729369699954987,
+   "test_loss": 3.7019640792697452,
+   "test_acc": 0.4371861420465219
+  },
+  {
+   "epoch": 6,
+   "train_loss": 2.3541255593299866,
+   "test_loss": 3.6215230440969695,
+   "test_acc": 0.46119761818490684
+  },
+  {
+   "epoch": 7,
+   "train_loss": 1.8132544875144958,
+   "test_loss": 3.6842573226723143,
+   "test_acc": 0.47200067196510287
+  },
+  {
+   "epoch": 8,
+   "train_loss": 1.3136936992406845,
+   "test_loss": 3.68612877388023,
+   "test_acc": 0.4778242021737463
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.8561924159526825,
+   "test_loss": 3.717034356485526,
+   "test_acc": 0.4883740554870762
+  },
+  {
+   "epoch": 10,
+   "train_loss": 0.4958129532635212,
+   "test_loss": 3.8169559021863764,
+   "test_acc": 0.4938599833301408
+  },
+  {
+   "epoch": 11,
+   "train_loss": 0.2558088097721338,
+   "test_loss": 3.9160529390318906,
+   "test_acc": 0.4984597268336261
+  },
+  {
+   "epoch": 12,
+   "train_loss": 0.12708867099136115,
+   "test_loss": 3.987382916884618,
+   "test_acc": 0.5007384912461708
+  },
+  {
+   "epoch": 13,
+   "train_loss": 0.06446028975769877,
+   "test_loss": 4.095431012866235,
+   "test_acc": 0.5020888799498613
+  },
+  {
+   "epoch": 14,
+   "train_loss": 0.03736748197115958,
+   "test_loss": 4.159778435924372,
+   "test_acc": 0.5056336355842196
+  },
+  {
+   "epoch": 15,
+   "train_loss": 0.02377423350699246,
+   "test_loss": 4.219994239345927,
+   "test_acc": 0.5061822179556346
+  },
+  {
+   "epoch": 16,
+   "train_loss": 0.016250860574655236,
+   "test_loss": 4.254348737215469,
+   "test_acc": 0.507954591436467
+  },
+  {
+   "epoch": 17,
+   "train_loss": 0.01197791970334947,
+   "test_loss": 4.2623014371596435,
+   "test_acc": 0.5079967830861959
+  },
+  {
+   "epoch": 18,
+   "train_loss": 0.0081956583308056,
+   "test_loss": 4.304500056534532,
+   "test_acc": 0.5078701906633432
+  },
+  {
+   "epoch": 19,
+   "train_loss": 0.005908910953439772,
+   "test_loss": 4.328101662385764,
+   "test_acc": 0.5084187763348086
+  },
+  {
+   "epoch": 20,
+   "train_loss": 0.004592738178325817,
+   "test_loss": 4.349712707767276,
+   "test_acc": 0.510022367699949
+  }
+ ],
+ "examples": [
+  {
+   "src": "this winter has been mild .",
+   "ref": "cet hiver a ete doux .",
+   "greedy": "cette maison est en deliberation ."
+  },
+  {
+   "src": "they will be here at three .",
+   "ref": "ils seront ici a trois heures .",
+   "greedy": "ils sont l'ouverture a trois heures ."
+  },
+  {
+   "src": "i once lived in rome .",
+   "ref": "j'ai vecu un temps a rome .",
+   "greedy": "je suis venu chez moi ."
+  },
+  {
+   "src": "schedules are difficult to coordinate .",
+   "ref": "les emplois du temps sont difficiles a coordonner .",
+   "greedy": "ses paroles s a ne pas etre abolie ."
+  },
+  {
+   "src": "i came here hoping to see tom .",
+   "ref": "je suis venu ici en esperant voir tom .",
+   "greedy": "je suis juste pour le dire a tom ."
+  }
+ ],
+ "legacy_source": "C8",
+ "config": {
+  "cell": "lstm",
+  "attention": "bahdanau",
+  "enc_layers": 4,
+  "dec_layers": 4,
+  "bi_layers": 1,
+  "residual_from": 2,
+  "gnmt": true
+ },
+ "model": "s2s_gnmt",
+ "stage": "lm03",
+ "smoke": false,
+ "torch": "2.5.1+cu124"
+}
