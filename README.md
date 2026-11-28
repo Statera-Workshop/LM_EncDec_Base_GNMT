@@ -1,3 +1,10 @@
+<!-- PAI-SG-LINKS:BEGIN -->
+## Project Links
+
+- [Project Portal](https://statera-workshop.github.io/#repo-lm_encdec_base_gnmt)
+- [Statera Workshop Portal](https://statera-workshop.github.io/)
+<!-- PAI-SG-LINKS:END -->
+
 # LM_EncDec_Base_GNMT
 
 Encoder-decoder translation model ported from legacy TF2 code C8 to PyTorch (cell=lstm, attention=bahdanau, enc_layers=4, dec_layers=4, bi_layers=1, residual_from=2, gnmt=True).
